@@ -1,5 +1,7 @@
 // 3) Dado o código das classes abaixo, qual será a saída do programa na tela? Justifique.
 
+//A saída será goodbye\n hello. Entra no contructor principal printando "goodbye". depois, entra no contructor com int de parametro e chama a mesma função com uma string "hello" como parâmetro que acaba chamando o constructor com string que printa o parametro.
+
 class Tester {
     private int var;
     public Tester(double var) { this.var = (int)var; }

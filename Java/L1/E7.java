@@ -6,6 +6,14 @@ class Var {
 }
 class Dicionario {
     public static Var tabela[];
+    public static Var getVariavelByNome(String palavra){
+        for(int i = 0; i < tabela.length; i++){
+            if(tabela[i].equals(palavra)){
+                return tabela[i];
+            }
+        }
+        return null;
+    }
 }
 
 // Implemente o método estático getVariavelByNome() na classe Dicionario. Esse método recebe como

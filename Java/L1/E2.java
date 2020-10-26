@@ -1,5 +1,7 @@
+import java.util.Scanner;
+
 // 2) A classe abaixo representa uma compra num software de comércio. A classe está com o código de seus métodos
-// incompleto. Escreva o código faltante dos métodos da classe Comprae escreva um programa em Java que instancie
+// incompleto. Escreva o código faltante dos métodos da classe Compra e escreva um programa em Java que instancie
 // um objeto da classe Compra, leia do teclado as informações necessárias para preencher todas as propriedades do
 // objeto e, por último, imprima essas informações através do método imprimeResumo().
 
@@ -33,10 +35,22 @@ class Compra {
     }
     // Imprime todas as propriedades da classe
     public void imprimeResumo() {
-
+        System.out.println("Nome do Produto: " + this.nomeProduto);
+        System.out.println("Preço: " + this.preço);
+        System.out.println("Quantidade: " + this.quantidade);
     }
 }
 
 public class E2 {
-    
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        String nome = s.nextLine();
+        float preço = s.nextFloat();
+        int quantidade = s.nextInt();
+
+        Compra c = new Compra(nome,preço,quantidade);
+        c.imprimeResumo();
+        s.close();
+    }
 }

@@ -1,6 +1,8 @@
 // 4) Dado o código abaixo, qual a saída do programa na tela? Justifique sua resposta desenhando e explicando a
 // representação na memória dos elementos do programa:
 
+//saída: 2.7 Box 9 0.0;
+
 class MyClass {
 public static void main(String[] args) {
     double d = 2.7;

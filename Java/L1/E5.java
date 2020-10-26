@@ -7,11 +7,51 @@
 class Autor {
     private String nome;
     private int id;
+
+    public int getId() {
+        return id;
+    }
+    public String getNome() {
+        return nome;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 }
 
 class Post{
-    private Autor autor;
+    private Autor autor = new Autor();
     private String texto;
     // Imprime todas as propriedades da classe no formato:
-    public void imprimeResumo() {}
+    public void imprimeResumo() {
+        System.out.println("Autor: " + this.autor.getNome() + " | ID: " + this.autor.getId());
+        System.out.println("\""+this.texto+"\"");
+    }
+    public Autor getAutor() {
+        return autor;
+    }
+    public String getTexto() {
+        return texto;
+    }
+    public void setAutor(Autor autor) {
+        this.autor = autor;
+    }
+    public void setTexto(String texto) {
+        this.texto = texto;
+    }
+}
+
+public class E5{
+    public static void main(String[] args) {
+        Post p = new Post();
+        Autor a = new Autor();
+        a.setId(112);
+        a.setNome("Alisson Peloso");
+        p.setAutor(a);
+        p.setTexto("bla bla bla");
+        p.imprimeResumo();
+    }
 }
