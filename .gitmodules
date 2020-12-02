@@ -1,7 +1,7 @@
-[submodule "/Jarena"]
-	path = /Jarena
+[submodule "Jarena"]
+	path = Programacao_I/Jarena
 	url = https://github.com/alissonpeloso/Jarena
 	
-[submodule "/Sucury-lang"]
-	path = /Sucury-lang
+[submodule "Sucury-lang"]
+	path = Programacao_I/Sucury-lang
 	url = https://github.com/alissonpeloso/Sucury-lang
