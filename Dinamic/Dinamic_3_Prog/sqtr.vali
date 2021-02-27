@@ -1,0 +1,22 @@
+inteiro numero;
+numero = 36;
+inteiro x = 1;
+inteiro achou = 0;
+enquanto(x < numero) {
+    inteiro a = 0;
+    inteiro resposta = 0;
+    enquanto(a < x){
+        resposta = resposta + x;
+        a = a + 1;
+    }
+    se(resposta == numero){
+        imprime("Raiz Quadrada: "+ x);
+        achou = 1;
+    }
+    senao{
+        se(x == numero-1 & achou != 1){
+            imprime("O número "+ numero+" não possuí raiz quadrada inteira.");
+        }
+    }
+    x = x + 1;
+}

@@ -1,0 +1,23 @@
+inteiro altura = 3;
+inteiro largura = 3;
+inteiro i = 0;
+palavra asterisco = "*";
+palavra zero = "0";
+enquanto(i < altura){
+    inteiro j = 0;
+    palavra linha = "";
+    enquanto(j < largura){
+        se(i == 0){
+            linha = linha + asterisco;
+        }
+        se(i == altura -1){
+            linha = linha + asterisco;
+        }
+        se(j == largura -1 | j == 0){
+            linha = linha + "0";
+        }
+        j = j + 1;
+    }
+    imprime(linha)
+    i = i + 1;
+}
